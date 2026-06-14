@@ -1,0 +1,26 @@
+/* ============================================================
+   style.css — Reset, variáveis, base, print, scrollbar
+   PAD Digital · Polícia Penal SC
+   ============================================================ */
+
+/* RESET */
+*{box-sizing:border-box;margin:0;padding:0}
+
+/* BASE */
+body{font-family:Arial,sans-serif;background:#f4f4f4;color:#1a1a1a;min-height:100vh}
+
+/* APP SHELL */
+.app{max-width:1100px;margin:0 auto;background:#fff;min-height:100vh;box-shadow:0 0 20px rgba(0,0,0,.08)}
+
+/* SCROLL PERSONALIZADO */
+::-webkit-scrollbar{width:5px;height:5px}
+::-webkit-scrollbar-track{background:#f0f0f0}
+::-webkit-scrollbar-thumb{background:#ccc;border-radius:3px}
+
+/* PRINT */
+@media print{
+  .topbar,.nav,.btns,.btn,.ch .btns,.prog-wrap,.manual-card,.drop-zone,
+  .mb-btn,.mod-card,.pvl,.atalho-grid,button{display:none!important}
+  .doc-out{border:none;background:white;max-height:none;font-size:12pt;padding:0;font-family:Arial,serif}
+  .card{border:none;padding:0}
+}

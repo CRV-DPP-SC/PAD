@@ -1,0 +1,43 @@
+/* ============================================================
+   layout.css — Topbar, navegação, body, grids, responsivo
+   PAD Digital · Polícia Penal SC
+   ============================================================ */
+
+/* TOPBAR */
+.topbar{background:#111111;padding:10px 20px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:10px;color:#fff;font-size:14px;font-weight:700;letter-spacing:.3px}
+.logo i{font-size:22px}
+.logo span{color:#999999}
+.perfil-wrap{display:flex;align-items:center;gap:8px}
+.badge-perfil{font-size:11px;padding:3px 10px;border-radius:99px;font-weight:600;border:1.5px solid}
+.bp-srv{background:#F0F0F0;color:#111111;border-color:#999999}
+.bp-def{background:#EAF3DE;color:#27500A;border-color:#97C459}
+.bp-adv{background:#F3EEFF;color:#5B2D9E;border-color:#C4A0F0}
+.btn-alt{font-size:11px;padding:4px 12px;border-radius:6px;border:1px solid rgba(255,255,255,.4);background:rgba(255,255,255,.1);color:#fff;cursor:pointer}
+.btn-alt:hover{background:rgba(255,255,255,.2)}
+
+/* NAV */
+.nav{display:flex;background:#fff;border-bottom:2px solid #e0e0e0;overflow-x:auto}
+.tab{padding:11px 16px;font-size:12px;cursor:pointer;border-bottom:3px solid transparent;color:#666;white-space:nowrap;display:flex;align-items:center;gap:5px;font-weight:500;margin-bottom:-2px}
+.tab:hover{color:#222222;background:#f8f8f8}
+.tab.on{color:#222222;border-bottom-color:#222222;font-weight:700}
+.tab .nb{background:#E24B4A;color:#fff;font-size:10px;padding:1px 6px;border-radius:99px;margin-left:3px}
+
+/* BODY / SEÇÕES */
+.body{padding:18px}
+.sec{display:none}
+.sec.on{display:block}
+
+/* GRIDS */
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.full{grid-column:1/-1}
+
+/* RESPONSIVIDADE */
+@media(max-width:700px){
+  .g2,.g3,.g4{grid-template-columns:1fr}
+  .ml-layout{grid-template-columns:1fr}
+  .atalho-grid{grid-template-columns:repeat(3,1fr)}
+  .mod-grid{grid-template-columns:repeat(2,1fr)}
+}
